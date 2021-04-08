@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- /Google Fonts -->
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
@@ -30,11 +30,29 @@
 
 
 <div id="root">
-  <header>
-    <i class="fas fa-compact-disc"></i>
-    <h1>Discs</h1>
+  <header class="df">
+    <div class="header__logo df">
+      <i class="fas fa-compact-disc"></i>
+      <h1 class="big-text">Discs</h1>
+    </div>
+    <div class="header__filter">
+      <select>
+        <option value="">All</option>
+        <option value="">prova</option>
+      </select>
+    </div>
   </header>
+
   <main>
+    <div class="wrapper-cd df">
+      <div class="cd df" v-for="disco in dischi">
+        <img :src="disco.poster" :alt="disco.title">
+        <h3 class="small-text">{{disco.title}}</h3>
+        <span class="xsmall-text">{{disco.author}}</span>
+        <span class="xsmall-text">{{disco.year}}</span>
+        <span class="xsmall-text">{{disco.genre}}</span>
+      </div>
+    </div>
 
   </main>
 </div>

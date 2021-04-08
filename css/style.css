@@ -6,5 +6,91 @@
 }
 /* ----/RESET---- */
 body{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Lato', sans-serif;
+  background-color: #1E2D3B;
+  min-height: 100vh;
 }
+/* ----------------------------------------Mix---------------------------------------- */
+a{text-decoration: none;}
+i{font-size: 40px; color: white;}
+span{font-size: 14px; color: white; font-weight: 700; margin: 8px 0px;}
+h1, h2, h3, h4, h5, h6, p{color: white;}
+h3{text-transform: uppercase; margin: 12px 0px;}
+.big-text{font-size: 30px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 16px; font-weight: bold;}
+.xsmall-text{font-size: 13px; font-weight: bold;}
+.user-avatar{cursor: pointer;}
+/* ---------------------------------------/Mix---------------------------------------- */
+/* --------------------------------------Discs------------------------------------- */
+/* -------------------HEADER------------------- */
+header{
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+  background-color: #2E3A46;
+  padding: 12px;
+}
+.header__logo{align-items: center;}
+.header__logo i{margin-right: 12px;}
+.header__filter select{
+  width: 150px;
+  cursor: pointer;
+  border: 1px solid lightgrey;
+  background-color: #2E3A46;
+  color: white;
+  padding: 3px;
+}
+/* -------------------/HEADER------------------- */
+
+/* -------------------MAIN------------------- */
+.wrapper-cd{
+  max-width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.cd{
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: calc(25% - 40px);
+  height: 360px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #2E3A46;
+  text-align: center;
+}
+.cd img{width: 180px; height: auto;}
+/* -------------------/MAIN------------------- */
+/* --------------------------------------/Discs------------------------------------- */
+/* ----helpers----*/
+.tw{color: white;}
+.df{display: flex;}
+.db{display: block;}
+.dib{display: inline-block;}
+.pr{position: relative;}
+.overflow-effect{overflow:auto;}
+/* ----/helpers----*/
+/* ---------------------------------RESPONSIVE------------------------------------- */
+@media (max-width:1080px) {
+  .cd{
+    width: calc(33% - 40px);
+  }
+}
+@media (max-width:992px) {
+  .cd{
+    width: calc(50% - 40px);
+  }
+}
+@media (max-width:762px) {
+  .cd{
+    width: calc(100% - 40px);
+  }
+}
+/* ---------------------------------/RESPONSIVE------------------------------------- */
