@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- /css -->
   <!-- favicon -->
-  <link rel="icon" type="image/png" href="https://pngimg.com/uploads/circle/circle_PNG26.png"/>
+  <link rel="icon" type="image/png" href="https://static.vecteezy.com/system/resources/previews/001/206/478/non_2x/music-flat-icon-vinyl-record-png.png"/>
   <!-- /favicon -->
   <title>Discs</title>
 </head>
@@ -35,16 +35,20 @@
       <i class="fas fa-compact-disc"></i>
       <h1 class="big-text">Discs</h1>
     </div>
+    <!-- filtro per genere -->
     <div class="header__filter">
       <select v-model="optionGenere">
         <option value="">All</option>
         <option v-for="genere in generi" :value="genere">{{genere}}</option>
       </select>
     </div>
+    <!-- /filtro per genere -->
   </header>
 
   <main>
+    <!-- contenitore cards -->
     <div class="wrapper-cd df">
+      <!-- card disco -->
       <div class="cd df" v-for="disco in dischi" v-if="optionGenere == '' || optionGenere == disco.genre">
         <img :src="disco.poster" :alt="disco.title">
         <h3 class="small-text">{{disco.title}}</h3>
@@ -52,8 +56,9 @@
         <span class="xsmall-text">{{disco.year}}</span>
         <span class="xsmall-text">{{disco.genre}}</span>
       </div>
+      <!-- /card disco -->
     </div>
-
+    <!-- /contenitore cards -->
   </main>
 </div>
 
