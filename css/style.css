@@ -11,16 +11,14 @@ body{
   min-height: 100vh;
 }
 /* ----------------------------------------Mix---------------------------------------- */
-a{text-decoration: none;}
 i{font-size: 40px; color: white;}
-span{font-size: 14px; color: white; font-weight: 700; margin: 8px 0px;}
+span{font-size: 20px; color: lightgrey; margin: 8px 0px;}
 h1, h2, h3, h4, h5, h6, p{color: white;}
 h3{text-transform: uppercase; margin: 12px 0px;}
 .big-text{font-size: 30px;}
 .normal-text{font-size: 20px;}
 .small-text{font-size: 16px; font-weight: bold;}
-.xsmall-text{font-size: 13px; font-weight: bold;}
-.user-avatar{cursor: pointer;}
+.xsmall-text{font-size: 14px; font-weight: bold;}
 /* ---------------------------------------/Mix---------------------------------------- */
 /* --------------------------------------Discs------------------------------------- */
 /* -------------------HEADER------------------- */
@@ -70,12 +68,7 @@ header{
 /* -------------------/MAIN------------------- */
 /* --------------------------------------/Discs------------------------------------- */
 /* ----helpers----*/
-.tw{color: white;}
 .df{display: flex;}
-.db{display: block;}
-.dib{display: inline-block;}
-.pr{position: relative;}
-.overflow-effect{overflow:auto;}
 /* ----/helpers----*/
 /* ---------------------------------RESPONSIVE------------------------------------- */
 @media (max-width:1080px) {

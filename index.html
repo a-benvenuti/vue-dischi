@@ -36,16 +36,16 @@
       <h1 class="big-text">Discs</h1>
     </div>
     <div class="header__filter">
-      <select>
+      <select v-model="optionGenere">
         <option value="">All</option>
-        <option value="">prova</option>
+        <option v-for="genere in generi" :value="genere">{{genere}}</option>
       </select>
     </div>
   </header>
 
   <main>
     <div class="wrapper-cd df">
-      <div class="cd df" v-for="disco in dischi">
+      <div class="cd df" v-for="disco in dischi" v-if="optionGenere == '' || optionGenere == disco.genre">
         <img :src="disco.poster" :alt="disco.title">
         <h3 class="small-text">{{disco.title}}</h3>
         <span class="xsmall-text">{{disco.author}}</span>
